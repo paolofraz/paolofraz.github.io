@@ -10971,3 +10971,56 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#publications .fa-ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+#publications .fa-ul > li {
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 1.5rem;
+}
+
+#publications .fa-li {
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+}
+
+#publications .fa-li .fa-file-alt {
+  font-size: 2em;  /* Increase the size of the paper icon */
+  color: #bd5d38;  /* Match the color with the theme */
+}
+
+#publications .publication-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #343a40;
+}
+
+#publications .publication-authors {
+  font-style: italic !important;
+  margin-bottom: 0.25rem;
+  color: #495057;
+}
+
+#publications .publication-info,
+#publications .publication-doi,
+#publications .publication-link {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+#publications .publication-doi a,
+#publications .publication-link a {
+    color: var(--bs-link-color);
+    text-decoration: none;
+}
+
+#publications .publication-doi a:hover,
+#publications .publication-link a:hover {
+  color: var(--bs-link-hover-color);
+  text-decoration: underline;
+}
