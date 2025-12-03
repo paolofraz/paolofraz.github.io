@@ -1,3 +1,12 @@
+// Update copyright year
+(function() {
+    // Update copyright year to current year
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
+    }
+})();
+
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap

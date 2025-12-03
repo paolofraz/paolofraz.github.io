@@ -34,7 +34,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  /* Updated --bs-primary to match --bs-primary-rgb */
+  --bs-primary: #004f59; /* Dark teal/blue color */
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -4097,6 +4098,34 @@ textarea.form-control-lg {
 .navbar-expand {
   flex-wrap: nowrap;
   justify-content: flex-start;
+}
+
+/* Copyright Footer */
+.copyright-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  color: #6c757d;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  text-align: center;
+  z-index: 1030;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright-footer .container {
+  max-width: 100%;
+}
+
+.copyright-footer p {
+  margin: 0;
+}
+
+/* Add padding to body to prevent content from being hidden behind fixed footer */
+body {
+  padding-bottom: 35px;
 }
 .navbar-expand .navbar-nav {
   flex-direction: row;
@@ -11023,4 +11052,29 @@ section.resume-section .resume-section-content {
 #publications .publication-link a:hover {
   color: var(--bs-link-hover-color);
   text-decoration: underline;
+}
+
+#publications .publication-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#publications .publication-main {
+  flex: 1;
+}
+
+#publications .publication-venue-box {
+  background-color: rgb(0, 79, 89);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 90px;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
